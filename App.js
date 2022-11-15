@@ -11,7 +11,7 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/index.html");
 });
 
-app.post("https://main.d2n5n5jgxzmwt7.amplifyapp.com", function(req, res){
+app.post("/", function(req, res){
     var county = req.body.county;
     var date = req.body.date;
     var temp = Number(req.body.temp);
